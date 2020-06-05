@@ -34,17 +34,7 @@
     
   }
   .button1:hover {
-    background-color: #ff4d6f;
-    color: white;
-  }
-
-  .tabbutton1 {
-    background-color: #3f51b5; 
-    color: black; 
-    
-  }
-  .tabbutton1:hover {
-    background-color:  #ff4d6f;
+    background-color: brown;
     color: white;
   }
 
@@ -53,5 +43,5 @@
   }
 
   .background1{
-    background-color: brown;
+    background-color: white;
   }

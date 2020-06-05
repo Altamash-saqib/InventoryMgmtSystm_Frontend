@@ -9,6 +9,10 @@ import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -28,6 +32,7 @@ import { ShowitemComponent } from './showitem/showitem.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
@@ -36,6 +41,9 @@ import { ShowitemComponent } from './showitem/showitem.component';
     MatInputModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatDividerModule,
+    MatExpansionModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

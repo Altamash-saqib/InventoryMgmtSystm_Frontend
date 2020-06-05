@@ -1,1 +1,38 @@
-<p>additem works!</p>
+<h2 class="center">ADD ITEM DETAILS</h2><br>
+
+<form [formGroup]="dynamicForm" class="container">
+    <mat-form-field class="example-full-width">
+      <mat-label>Item No</mat-label>
+      <input matInput placeholder="Ex:01" formControlName="itemno" class="form-control">
+    </mat-form-field><br>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Name of Item</mat-label>
+        <input matInput placeholder="Ex:Apple" formControlName="name" class="form-control">
+      </mat-form-field><br>
+      
+      <mat-form-field class="example-full-width">
+        <mat-label>Category</mat-label>
+        <input matInput placeholder="Ex:Fruits" formControlName="category" class="form-control">
+      </mat-form-field><br>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Cost Price</mat-label>
+        <input matInput placeholder="Ex:120.80" formControlName="cprice" class="form-control">
+      </mat-form-field><br>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Selling Price</mat-label>
+        <input matInput placeholder="Ex:125.00" formControlName="sprice" class="form-control">
+      </mat-form-field><br>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Quantity</mat-label>
+        <input matInput placeholder="Ex:2Kg" formControlName="quantity" class="form-control">
+      </mat-form-field><br>
+
+      <a (click)="onSubmit()" class="button button1">SAVE</a>
+       <a (click)="updateItem()" class="button button1">UPDATE</a>
+
+
+    </form>

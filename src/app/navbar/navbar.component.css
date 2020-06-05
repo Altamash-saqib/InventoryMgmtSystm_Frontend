@@ -6,6 +6,7 @@
     position: fixed;
     left: 0;
     right: 0;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 .alignment {
     position: absolute;
@@ -30,7 +31,7 @@
   }
   .button1 {
     background-color: #ddd; 
-    color: black; 
+    color: brown; 
     
   }
   .button1:hover {

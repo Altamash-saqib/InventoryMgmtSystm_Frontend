@@ -22,13 +22,13 @@ export class DataService {
     return this.http.post(environment.api_url+'/addItems',item);
   }
 
-  public  getBooks() {
-    return this.http.get(environment.api_url+'/getBooks');
+  public  getItems() {
+    return this.http.get(environment.api_url+'/getItems');
   }
 
-  public deleteBook(index)
+  public deleteItems(index)
   {
-    return this.http.delete(environment.api_url+'/deleteBooks'+"/"+index);
+    return this.http.delete(environment.api_url+'/deleteItems'+"/"+index);
   }
 
   public getBookId(isbn) {
@@ -39,6 +39,6 @@ export class DataService {
 
   public updateItem(item, index) {
     console.log(item);
-    return this.http.put(environment.api_url+'/updateBooks'+"/"+index,item);
+    return this.http.put(environment.api_url+'/updateItems'+"/"+index,item);
    }
   }

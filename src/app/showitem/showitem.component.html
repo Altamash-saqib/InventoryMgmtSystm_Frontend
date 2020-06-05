@@ -1,1 +1,30 @@
-<p>showitem works!</p>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<div class="center">
+    
+    <h2>LIST OF ITEMS AVAILABLE</h2>
+    <table class="customers">
+        <tr>
+            <th>ITEM_NO</th>
+                <th>NAME OF ITEM</th>
+                    <th>CATEGORY</th>
+                        <th>COST_PRICE</th>
+                            <th>SELLING_PRICE</th>
+                                <th>QUANTITY</th>
+                                    <th>EDIT</th>
+                                        <th>REMOVE</th>      
+        </tr>
+        <!-- BIND VALUES TO TABLE -->
+            <tr *ngFor="let item of itemList; let i=index">
+              <td>{{ item.itemno}}</td>
+              <td>{{ item.name}}</td>
+              <td>{{ item.category}}</td>
+              <td>{{ item.cprice}}</td>
+              <td>{{ item.sprice}}</td>
+              <td>{{ item.quantity}}</td>
+             <td><button (click)="EditDetails(item)" class="button button1"><i class="material-icons">create</i></button></td> 
+             <td><button (click)="deleteItems(item.itemno)" class="button button1"><i class="material-icons">delete</i></button></td> 
+            </tr>
+    </table>
+    <br>
+    </div>

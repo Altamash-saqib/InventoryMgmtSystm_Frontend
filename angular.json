@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "InventoryMgmtSystm"
+    }
+  },
+  "defaultProject": "InventoryMgmtSystm",
+  "cli": {
+    "analytics": false
+  }
 }

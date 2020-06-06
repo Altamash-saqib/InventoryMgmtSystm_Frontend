@@ -43,7 +43,7 @@ import { ShowitemComponent } from './showitem/showitem.component';
     HttpClientModule,
     MatDividerModule,
     MatExpansionModule,
-    MatGridListModule
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

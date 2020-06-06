@@ -17,7 +17,7 @@ export class AdditemComponent implements OnInit {
   editItem = {};
 
   constructor(private formBuilder: FormBuilder, private dataService: DataService, 
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute) {}
 
   ngOnInit() {
       this.dynamicForm = this.formBuilder.group({
@@ -62,11 +62,13 @@ export class AdditemComponent implements OnInit {
     { alert('Item Added successfully');
   }); 
     this.dynamicForm.reset();
-    
+    this.submitted = false;
 };
+
 
 updateItem()
 {
+  this.submitted=false;
   const item = this.dynamicForm.value;
   console.log(this.dynamicForm.value);
   const itemIndex = this.dynamicForm.value.itemno;
@@ -74,7 +76,7 @@ updateItem()
   this.dataService.updateItem(item, itemIndex).subscribe(data =>{
   alert('Item Updated successfully');
 });
-
+this.dynamicForm.reset();
 };
 
 }

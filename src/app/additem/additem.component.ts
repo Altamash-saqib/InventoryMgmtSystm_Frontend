@@ -68,7 +68,6 @@ export class AdditemComponent implements OnInit {
 
 updateItem()
 {
-  this.submitted=false;
   const item = this.dynamicForm.value;
   console.log(this.dynamicForm.value);
   const itemIndex = this.dynamicForm.value.itemno;

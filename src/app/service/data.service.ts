@@ -30,13 +30,7 @@ export class DataService {
   {
     return this.http.delete(environment.api_url+'/deleteItems'+"/"+index);
   }
-
-  public getBookId(isbn) {
-    if(isbn){
-      return this.http.get(environment.api_url+'/books'+"/"+isbn);
-    }
-  }
-
+  
   public updateItem(item, index) {
     console.log(item);
     return this.http.put(environment.api_url+'/updateItems'+"/"+index,item);

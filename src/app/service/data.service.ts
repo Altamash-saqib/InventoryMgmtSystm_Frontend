@@ -13,8 +13,6 @@ const httpOptions = {
 })
 export class DataService {
 
-  private bookList = [];
-
   constructor(private http:HttpClient) { }
 
 

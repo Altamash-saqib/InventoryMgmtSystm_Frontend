@@ -32,7 +32,6 @@ export class DataService {
   }
   
   public updateItem(item, index) {
-    console.log(item);
     return this.http.put(environment.api_url+'/updateItems'+"/"+index,item);
    }
   }
